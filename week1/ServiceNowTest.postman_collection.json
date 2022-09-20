@@ -1,0 +1,189 @@
+{
+	"info": {
+		"_postman_id": "54199269-f51b-4d31-8f00-eb4ff2f3ab69",
+		"name": "ServiceNowTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23283997"
+	},
+	"item": [
+		{
+			"name": "CreateTicket_POST",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true,
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wX%a0o4lCZ^L",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"description\":\"windows booting issue after update\",\"short_description\":\"Boot issue\"}"
+				},
+				"url": {
+					"raw": "https://dev78768.service-now.com/api/now/table/incident",
+					"protocol": "https",
+					"host": [
+						"dev78768",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"incident"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetRequest",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "PutRequest",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wX%a0o4lCZ^L",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"short_description\":\"Change Boot issue\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev78768.service-now.com/api/now/table/incident/bedd48c12f4e5110dc8ad3f62799b6f1",
+					"protocol": "https",
+					"host": [
+						"dev78768",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"incident",
+						"bedd48c12f4e5110dc8ad3f62799b6f1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRequest",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Patchrequest",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "wX%a0o4lCZ^L",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "https://dev78768.service-now.com/api/now/table/incident/b0d6fa8d2f869110dc8ad3f62799b62b",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://dev78768.service-now.com/api/now/table/incident/b0d6fa8d2f869110dc8ad3f62799b62b",
+					"protocol": "https",
+					"host": [
+						"dev78768",
+						"service-now",
+						"com"
+					],
+					"path": [
+						"api",
+						"now",
+						"table",
+						"incident",
+						"b0d6fa8d2f869110dc8ad3f62799b62b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllrecordRequest",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
